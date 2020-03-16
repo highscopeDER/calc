@@ -1,12 +1,14 @@
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
-import android.util.Log
-import android.widget.LinearLayout
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.view.isVisible
 import kotlin.math.*
 import kotlinx.android.synthetic.main.activity_main.*
+
+
 
 
 class  MainActivity : AppCompatActivity() {
@@ -18,12 +20,14 @@ class  MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
+
+
         settBut.setOnClickListener {
 
             val settframe = AlertDialog.Builder(this)
             settframe.setTitle("Settings")
             val settframeview = getLayoutInflater()
-                .inflate(R.layout.settings, null)
+                .inflate(R.layout.sample_my_view, null)
             settframe.setView(settframeview)
             settframe.show()
             settframe.setCancelable(true)
