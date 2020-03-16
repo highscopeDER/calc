@@ -1,0 +1,43 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <com.example.smartcount.MyView
+        android:id="@+id/settView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="40dp"
+        app:exampleColor="#33b5e5"
+        app:exampleDimension="24sp"
+
+        />
+
+    <Switch
+        android:id="@+id/darkthemeswitchBut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:text="Dark theme"
+        android:paddingLeft="130dp"
+        android:paddingRight="130dp"
+        android:layout_marginTop="100dp"
+        />
+    <Button
+        android:id="@+id/aplyBut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apply"
+        android:layout_marginTop="250dp"
+        android:paddingLeft="130dp"
+        android:paddingRight="130dp"
+        android:height="20dp"
+        />
+
+
+</FrameLayout>
